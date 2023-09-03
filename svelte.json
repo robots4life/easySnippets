@@ -1,0 +1,109 @@
+{
+  "sts": {
+    "prefix": "sts",
+    "description": "script ts",
+    "body": ["<script lang=\"ts\">", "    $1", "</script>"]
+  },
+  "page": {
+    "prefix": "page",
+    "description": "page data",
+    "body": [
+      "<script lang=\"ts\">",
+      "    import type { PageData } from './\\$types';    ",
+      "    export let data: PageData;",
+      "  </script>",
+      "",
+      "{#if Object.keys(data).length !== 0}",
+      "\t<pre>{JSON.stringify(data, null, 2)}</pre>",
+      "{/if}"
+    ]
+  },
+  "pre": {
+    "prefix": "pre",
+    "description": "pre",
+    "body": ["<pre>{JSON.stringify($1, null, 2)}</pre>"]
+  },
+  "module": {
+    "prefix": "module",
+    "description": "module ts",
+    "body": ["<script lang=\"ts\" context=\"module\">", "    $1", "</script>"]
+  },
+  "ulist": {
+    "prefix": "ulist",
+    "description": "ul list",
+    "body": [
+      "<ul>",
+      "    {#each ${1:items} as ${2:item}}",
+      "    <li>{$2}</li>",
+      "    {/each}",
+      "</ul>"
+    ]
+  },
+  "olist": {
+    "prefix": "olist",
+    "description": "ol list",
+    "body": [
+      "<ol>",
+      "    {#each ${1:items} as ${2:item}}",
+      "    <li>{$2}</li>",
+      "    {/each}",
+      "</ol>"
+    ]
+  },
+  "form": {
+    "prefix": "form",
+    "description": "form",
+    "body": [
+      "<form method=\"$1\" action=\"?/$2\">    ",
+      "    <label for=\"$3\">Label Text</label>",
+      "    <input type=\"$4\" name=\"$3\" id=\"$3\" />",
+      "    <button type=\"submit\">Submit</button>",
+      "</form>"
+    ]
+  },
+  "each": {
+    "prefix": "each",
+    "description": "each block",
+    "body": [
+      "{#each $1 as ${2:item}, index}",
+      "    <div>index: {index}</div>",
+      "    <div>item : {$2}</div>",
+      "{/each}",
+      ""
+    ]
+  },
+  "await": {
+    "prefix": "await",
+    "description": "await block",
+    "body": [
+      "{#await $1}",
+      "\t<p>Loading..</p>",
+      "{:then $2}",
+      "\t<pre>{JSON.stringify($2, null, 2)}</pre>",
+      "{:catch error}",
+      "\t<p style=\"color: red\">{error.message}</p>",
+      "{/await}",
+      "",
+      ""
+    ]
+  },
+  "pageDataForm": {
+    "prefix": "pageDataForm",
+    "description": "page data from",
+    "body": [
+      "<script lang=\"ts\">",
+      "\timport type { PageData } from './\\$types';",
+      "\texport let data: PageData;",
+      "\texport let form;",
+      "</script>",
+      "",
+      "{#if Object.keys(data).length !== 0}",
+      "\t<pre>{JSON.stringify(data, null, 2)}</pre>",
+      "{/if}",
+      "",
+      "{#if form}",
+      "\t<pre>{JSON.stringify(form, null, 2)}</pre>",
+      "{/if}"
+    ]
+  }
+}

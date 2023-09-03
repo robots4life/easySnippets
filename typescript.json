@@ -1,0 +1,53 @@
+{
+  "default action": {
+    "prefix": "daction",
+    "description": "default action",
+    "body": [
+      "import type { Actions } from '@sveltejs/kit';",
+      "",
+      "export const actions: Actions = {",
+      "\tdefault: async ({ request }) => {",
+      "\t\tconst formData = await request.formData();",
+      "",
+      "\t\tconst formEntires = [];",
+      "\t\tfor (const pair of formData.entries()) {",
+      "\t\t\tconsole.log(`${pair[0]}, ${pair[1]}`);",
+      "\t\t\tformEntires.push({ [pair[0]]: pair[1] });",
+      "\t\t}",
+      "",
+      "\t\treturn { formEntires };",
+      "\t}",
+      "};"
+    ]
+  },
+  "pageServerLoad": {
+    "prefix": "pageServerLoad",
+    "description": "Page Server Load",
+    "body": [
+      "import type { PageServerLoad } from './\\$types';",
+      "",
+      "export const load: PageServerLoad = async () => {",
+      "\treturn { key: 'value' };",
+      "};",
+      "",
+      ""
+    ]
+  },
+  "fullPageServerLoad": {
+    "prefix": "fullPageServerLoad",
+    "description": "Full Page Server Load",
+    "body": [
+      "import type { PageServerLoad } from './\\$types';",
+      "",
+      "export const load: PageServerLoad = async ({ url, route, params }) => {",
+      "\tconsole.log(url);",
+      "\tconsole.log(route);",
+      "\tconsole.log(params);",
+      "",
+      "\treturn { key: 'value' };",
+      "};",
+      "",
+      ""
+    ]
+  }
+}
