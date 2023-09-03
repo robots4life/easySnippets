@@ -54,10 +54,10 @@
     "prefix": "form",
     "description": "form",
     "body": [
-      "<form method=\"$1\" action=\"?/$2\">    ",
-      "    <label for=\"$3\">Label Text</label>",
-      "    <input type=\"$4\" name=\"$3\" id=\"$3\" />",
-      "    <button type=\"submit\">Submit</button>",
+      "<form id=\"$1\" method=\"$2\" action=\"?/$3\">    ",
+      "    <label for=\"$4\">Label Text</label>",
+      "    <input type=\"$5\" name=\"$4\" id=\"$4\" />",
+      "    <button form=\"$1\" type=\"submit\">Submit</button>",
       "</form>"
     ]
   },
@@ -105,5 +105,18 @@
       "\t<pre>{JSON.stringify(form, null, 2)}</pre>",
       "{/if}"
     ]
+  },
+  "labelInput": {
+    "prefix": "labelInput",
+    "description": "label input",
+    "body": [
+      "<label for=\"$1\">Label Text</label>",
+      "<input type=\"$2\" name=\"$1\" id=\"$1\" />"
+    ]
+  },
+  "a": {
+    "prefix": "a",
+    "description": "anchor",
+    "body": ["<a href=\"$1\">$2</a>"]
   }
 }
