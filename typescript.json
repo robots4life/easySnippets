@@ -20,6 +20,27 @@
       "};"
     ]
   },
+  "named action": {
+    "prefix": "naction",
+    "description": "named action",
+    "body": [
+      "import type { Actions } from '@sveltejs/kit';",
+      "",
+      "export const actions: Actions = {",
+      "\t$1: async ({ request }) => {",
+      "\t\tconst formData = await request.formData();",
+      "",
+      "\t\tconst formEntires = [];",
+      "\t\tfor (const pair of formData.entries()) {",
+      "\t\t\tconsole.log(`${pair[0]}, ${pair[1]}`);",
+      "\t\t\tformEntires.push({ [pair[0]]: pair[1] });",
+      "\t\t}",
+      "",
+      "\t\treturn { formEntires };",
+      "\t}",
+      "};"
+    ]
+  },
   "pageServerLoad": {
     "prefix": "pageServerLoad",
     "description": "Page Server Load",

@@ -2,7 +2,11 @@
   "sts": {
     "prefix": "sts",
     "description": "script ts",
-    "body": ["<script lang=\"ts\">", "    $1", "</script>"]
+    "body": [
+      "<script lang=\"ts\">",
+      "    $1",
+      "</script>"
+    ]
   },
   "page": {
     "prefix": "page",
@@ -21,12 +25,18 @@
   "pre": {
     "prefix": "pre",
     "description": "pre",
-    "body": ["<pre>{JSON.stringify($1, null, 2)}</pre>"]
+    "body": [
+      "<pre>{JSON.stringify($1, null, 2)}</pre>"
+    ]
   },
   "module": {
     "prefix": "module",
     "description": "module ts",
-    "body": ["<script lang=\"ts\" context=\"module\">", "    $1", "</script>"]
+    "body": [
+      "<script lang=\"ts\" context=\"module\">",
+      "    $1",
+      "</script>"
+    ]
   },
   "ulist": {
     "prefix": "ulist",
@@ -55,8 +65,8 @@
     "description": "form",
     "body": [
       "<form id=\"$1\" method=\"$2\" action=\"?/$3\">    ",
-      "    <label for=\"$4\">Label Text</label>",
-      "    <input type=\"$5\" name=\"$4\" id=\"$4\" />",
+      "    <label for=\"$4\">$5</label>",
+      "    <input type=\"$6\" name=\"$4\" id=\"$4\" />",
       "    <button form=\"$1\" type=\"submit\">Submit</button>",
       "</form>"
     ]
@@ -110,13 +120,15 @@
     "prefix": "labelInput",
     "description": "label input",
     "body": [
-      "<label for=\"$1\">Label Text</label>",
+      "<label for=\"$1\">$3</label>",
       "<input type=\"$2\" name=\"$1\" id=\"$1\" />"
     ]
   },
   "a": {
     "prefix": "a",
     "description": "anchor",
-    "body": ["<a href=\"$1\">$2</a>"]
+    "body": [
+      "<a href=\"$1\">$2</a>"
+    ]
   }
 }
