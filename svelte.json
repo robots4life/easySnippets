@@ -2,11 +2,7 @@
   "sts": {
     "prefix": "sts",
     "description": "script ts",
-    "body": [
-      "<script lang=\"ts\">",
-      "    $1",
-      "</script>"
-    ]
+    "body": ["<script lang=\"ts\">", "    $1", "</script>"]
   },
   "page": {
     "prefix": "page",
@@ -25,18 +21,12 @@
   "pre": {
     "prefix": "pre",
     "description": "pre",
-    "body": [
-      "<pre>{JSON.stringify($1, null, 2)}</pre>"
-    ]
+    "body": ["<pre>{JSON.stringify($1, null, 2)}</pre>"]
   },
   "module": {
     "prefix": "module",
     "description": "module ts",
-    "body": [
-      "<script lang=\"ts\" context=\"module\">",
-      "    $1",
-      "</script>"
-    ]
+    "body": ["<script lang=\"ts\" context=\"module\">", "    $1", "</script>"]
   },
   "ulist": {
     "prefix": "ulist",
@@ -103,8 +93,9 @@
     "body": [
       "<script lang=\"ts\">",
       "\timport type { PageData } from './\\$types';",
+      "\timport type { ActionData } from './\\$types';",
       "\texport let data: PageData;",
-      "\texport let form;",
+      "\texport let form: ActionData;",
       "</script>",
       "",
       "{#if Object.keys(data).length !== 0}",
@@ -127,8 +118,6 @@
   "a": {
     "prefix": "a",
     "description": "anchor",
-    "body": [
-      "<a href=\"$1\">$2</a>$3"
-    ]
+    "body": ["<a href=\"$1\">$2</a>$3"]
   }
 }
