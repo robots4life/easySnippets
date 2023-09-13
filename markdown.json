@@ -2,6 +2,9 @@
   "a": {
     "prefix": "a",
     "description": "anchor",
-    "body": ["<a href=\"$1\" target=\"_blank\">$1</a>", ""]
+    "body": [
+      "<a href=\"$1\" target=\"_blank\">$1</a>$2",
+      ""
+    ]
   }
 }
