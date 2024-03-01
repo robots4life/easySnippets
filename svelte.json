@@ -4,6 +4,11 @@
     "description": "script ts",
     "body": ["<script lang=\"ts\">", "    $1", "</script>"]
   },
+  "s": {
+    "prefix": "s",
+    "description": "script",
+    "body": ["<script>", "    $1", "</script>"]
+  },
   "page": {
     "prefix": "page",
     "description": "page data",
