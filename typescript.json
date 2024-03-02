@@ -70,5 +70,15 @@
       "",
       ""
     ]
+  },
+  "log": {
+    "prefix": "log",
+    "description": "log to console",
+    "body": ["console.log($0);"]
+  },
+  "dir": {
+    "prefix": "dir",
+    "description": "dir to console",
+    "body": ["console.dir($0);"]
   }
 }
