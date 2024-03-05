@@ -8,5 +8,10 @@
     "prefix": "aa",
     "description": "anchor target blank",
     "body": ["<a target=\"_blank\" href=\"$1\">$1</a>$2", ""]
+  },
+  "d": {
+    "prefix": "details",
+    "description": "details",
+    "body": ["<details>", "", "$1", "", "</details>"]
   }
 }
