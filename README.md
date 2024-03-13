@@ -55,7 +55,7 @@ javascript
   "log": {
     "prefix": "log",
     "description": "log to console",
-    "body": ["console.log($0);"]
+    "body": ["console.log(\"$0 : \", $0);"]
   },
   "dir": {
     "prefix": "dir",
@@ -232,7 +232,7 @@ svelte
 
 typescript
 
-```json
+```ts
 {
   "default action": {
     "prefix": "daction",
@@ -309,7 +309,7 @@ typescript
   "log": {
     "prefix": "log",
     "description": "log to console",
-    "body": ["console.log($0);"]
+    "body": ["console.log(\"$0 : \", $0);", ""]
   },
   "dir": {
     "prefix": "dir",
