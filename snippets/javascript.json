@@ -19,5 +19,28 @@
     "body": [
       "console.dir($0);"
     ]
+  },
+  "Action": {
+    "prefix": "action",
+    "body": [
+      "function action(node: HTMLElement, params: number) {",
+      "\t// the node has been mounted in the DOM",
+      "\tconsole.log('node : ', node);",
+      "",
+      "\t// the Action attribute value is logged to the console",
+      "\tconsole.log('params : ', params);",
+      "",
+      "\treturn {",
+      "\t\tupdate(newParams: number) {",
+      "\t\t\t// the new Action attribute value is logged to the console",
+      "\t\t\tconsole.log('newParams : ', newParams);",
+      "\t\t},",
+      "\t\t// this runs when the component is unmounted",
+      "\t\tdestroy() {",
+      "\t\t\tconsole.log('the node has been removed from the DOM');",
+      "\t\t}",
+      "\t};",
+      "}"
+    ]
   }
 }
