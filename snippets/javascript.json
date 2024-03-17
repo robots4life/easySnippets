@@ -1,0 +1,23 @@
+{
+  "log": {
+    "prefix": "log",
+    "description": "log to console\neslint-disable\nprettier-ignore",
+    "body": [
+      "console.log(\"$1 : \", $1);$2"
+    ]
+  },
+  "logg": {
+    "prefix": "logg",
+    "description": "log to console\neslint-disable\nprettier-ignore",
+    "body": [
+      "console.log($1);$2"
+    ]
+  },
+  "dir": {
+    "prefix": "dir",
+    "description": "dir to console\neslint-disable\nprettier-ignore",
+    "body": [
+      "console.dir($0);"
+    ]
+  }
+}

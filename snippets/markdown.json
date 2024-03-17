@@ -1,0 +1,29 @@
+{
+  "a": {
+    "prefix": "a",
+    "description": "anchor",
+    "body": [
+      "<a href=\"$1\">$1</a>$2",
+      ""
+    ]
+  },
+  "aa": {
+    "prefix": "aa",
+    "description": "anchor target blank",
+    "body": [
+      "<a target=\"_blank\" href=\"$1\">$1</a>$2",
+      ""
+    ]
+  },
+  "d": {
+    "prefix": "details",
+    "description": "details",
+    "body": [
+      "<details>",
+      "",
+      "$1",
+      "",
+      "</details>",
+    ]
+  }
+}

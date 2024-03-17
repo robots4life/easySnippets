@@ -2,6 +2,9 @@
   "log": {
     "prefix": "log",
     "description": "Console.WriteLine()",
-    "body": ["Console.WriteLine($1);", ""]
+    "body": [
+      "Console.WriteLine($1);",
+      ""
+    ]
   }
 }
