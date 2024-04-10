@@ -127,19 +127,19 @@
     ]
   },
   "labelInput": {
-    "prefix": "labelInput",
+    "prefix": "labelInput ",
     "description": "label input",
     "body": [
       "<label for=\"$1\">$3</label>",
-      "<input type=\"$2\" name=\"$1\" id=\"$1\" />"
+      "<input type=\"$2\" name=\"$1\" id=\"$1\" />",
+      "",
+      ""
     ]
   },
   "a": {
-    "prefix": "a // @description anchor // eslint-disable // prettier-ignore //",
+    "prefix": "a ",
     "description": "anchor",
     "body": [
-      "@description anchor",
-      "",
       "<a href=\"$1\">$1</a>$2",
       ""
     ]
