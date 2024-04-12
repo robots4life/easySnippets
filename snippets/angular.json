@@ -1,0 +1,10 @@
+{
+  "sika select": {
+    "prefix": "sika select",
+    "body": [
+      "<sika-select *ngIf=\"companyForm.get('certrequired')?.value\" [multiple]=\"true\" controlName=\"certsrequired\"",
+      "[formGroup]=\"companyForm\" class=\"full-width\" [labelValueTranslated]=\"'company.certificates' | translate\"",
+      "[selectValues]=\"lstCerts\" />"
+    ]
+  }
+}
