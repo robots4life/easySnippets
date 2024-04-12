@@ -135,7 +135,7 @@
     ]
   },
   "a": {
-    "prefix": "a",
+    "prefix": "a // @description anchor // eslint-disable // prettier-ignore",
     "description": "anchor",
     "body": [
       "<a href=\"$1\">$1</a>;$2",

@@ -46,17 +46,17 @@
     "description": "Svelte Action"
   },
   "warn": {
-    "prefix": "warn",
-    "body": [
-      "console.warn(\"\\$1 : \", $1);$2"
-    ],
-    "description": "warn to console"
-  },
-  "warnn": {
-    "prefix": "warnn",
+    "prefix": "log",
     "description": "warn to console",
     "body": [
-      "console.warn($1);"
+      "console.warn(\"$1 : \", $1);$2"
+    ]
+  },
+  "warnn": {
+    "prefix": "logg",
+    "description": "log to console",
+    "body": [
+      "console.log(\"$1\");$2"
     ]
   }
 }
