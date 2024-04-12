@@ -82,7 +82,7 @@
     "prefix": "logg",
     "description": "logg to console",
     "body": [
-      "console.log(\"$1\");$2"
+      "console.log($1);$2"
     ]
   },
   "dir": {
