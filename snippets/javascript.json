@@ -56,7 +56,7 @@
     "prefix": "warnn",
     "description": "warnn to console",
     "body": [
-      "console.warn(\"$1\");$2"
+      "console.warn($1);$2"
     ]
   }
 }
