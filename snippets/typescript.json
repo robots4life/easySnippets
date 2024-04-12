@@ -126,7 +126,7 @@
   },
   "warnn": {
     "prefix": "warnn",
-    "description": "warn to console",
+    "description": "warnn to console",
     "body": [
       "console.warn(\"$1\");$2"
     ]
