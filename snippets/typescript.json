@@ -128,7 +128,7 @@
     "prefix": "logg",
     "description": "warn to console",
     "body": [
-      "console.log(\"$1\");$2"
+      "console.warn(\"$1\");$2"
     ]
   }
 }

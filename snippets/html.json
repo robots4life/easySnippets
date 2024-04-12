@@ -1,6 +1,6 @@
 {
   "anchor": {
-    "prefix": "a // @description anchor",
+    "prefix": "a",
     "body": [
       "<a href=\"$1\">$2</a>$3",
       ""
