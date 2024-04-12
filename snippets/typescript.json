@@ -73,21 +73,21 @@
   },
   "log": {
     "prefix": "log",
-    "description": "log to console\neslint-disable\nprettier-ignore",
+    "description": "log to console",
     "body": [
       "console.log(\"$1 : \", $1);$2"
     ]
   },
   "logg": {
     "prefix": "logg",
-    "description": "log to console\neslint-disable\nprettier-ignore",
+    "description": "log to console",
     "body": [
       "console.log(\"$1\");$2"
     ]
   },
   "dir": {
     "prefix": "dir",
-    "description": "dir to console\neslint-disable\nprettier-ignore",
+    "description": "dir to console",
     "body": [
       "console.dir($0);"
     ]
@@ -116,5 +116,19 @@
       ""
     ],
     "description": "Svelte Action"
+  },
+  "warn": {
+    "prefix": "warn",
+    "description": "warn to console",
+    "body": [
+      "console.warn(\"\\$1 : \", $1);$2"
+    ]
+  },
+  "warnn": {
+    "prefix": "warnn",
+    "description": "warn to console",
+    "body": [
+      "console.warn($1);"
+    ]
   }
 }
