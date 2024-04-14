@@ -58,5 +58,19 @@
     "body": [
       "console.warn($1);$2"
     ]
+  },
+  "er": {
+    "prefix": "er",
+    "description": "er to console",
+    "body": [
+      "console.error(\"$1 : \", $1);$2"
+    ]
+  },
+  "err": {
+    "prefix": "err",
+    "description": "err to console",
+    "body": [
+      "console.error($1);$2"
+    ]
   }
 }
