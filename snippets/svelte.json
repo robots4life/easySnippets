@@ -155,5 +155,11 @@
     "body": [
       "<p>$1</p>"
     ]
+  },
+  "$page": {
+    "prefix": "$page",
+    "body": [
+      "import { page } from '$app/stores';"
+    ]
   }
 }
