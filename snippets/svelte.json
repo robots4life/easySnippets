@@ -156,11 +156,10 @@
       "<p>$1</p>"
     ]
   },
-  "$page": {
-    "prefix": "$page",
+  "ppage": {
+    "prefix": "ppage",
     "body": [
       "import { page } from '$app/stores';"
-    ],
-    "description": "$page"
+    ]
   }
 }
