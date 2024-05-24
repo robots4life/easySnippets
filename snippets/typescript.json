@@ -148,7 +148,7 @@
   "$page": {
     "prefix": "$page",
     "body": [
-      "import { page } from '$app/stores';"
+      "import { page } from '\\$app/stores';"
     ],
     "description": "$page"
   }
