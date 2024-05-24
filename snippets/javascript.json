@@ -72,5 +72,12 @@
     "body": [
       "console.error($1);$2"
     ]
+  },
+  "$page": {
+    "prefix": "$page",
+    "description": "$page",
+    "body": [
+      "import { page } from '$app/stores';"
+    ]
   }
 }

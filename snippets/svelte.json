@@ -155,11 +155,5 @@
     "body": [
       "<p>$1</p>"
     ]
-  },
-  "ppage": {
-    "prefix": "ppage",
-    "body": [
-      "import { page } from '$app/stores';"
-    ]
   }
 }
