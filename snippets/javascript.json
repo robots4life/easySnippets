@@ -1,0 +1,83 @@
+{
+  "log": {
+    "prefix": "log",
+    "description": "log to console",
+    "body": [
+      "console.log(\"$1 : \", $1);$2"
+    ]
+  },
+  "logg": {
+    "prefix": "logg",
+    "description": "log to console",
+    "body": [
+      "console.log($1);$2"
+    ]
+  },
+  "dir": {
+    "prefix": "dir",
+    "description": "dir to console",
+    "body": [
+      "console.dir($0);"
+    ]
+  },
+  "Action": {
+    "prefix": "action",
+    "body": [
+      "function action(node: HTMLElement, params: number) {",
+      "  // the node has been mounted in the DOM",
+      "  console.log(\"node : \", node);",
+      "",
+      "  // the Action attribute value is logged to the console",
+      "  console.log(\"params : \", params);",
+      "",
+      "  return {",
+      "    update(newParams: number) {",
+      "      // the new Action attribute value is logged to the console",
+      "      console.log(\"newParams : \", newParams);",
+      "    },",
+      "    // this runs when the component is unmounted",
+      "    destroy() {",
+      "      console.log(\"the node has been removed from the DOM\");",
+      "    },",
+      "  };",
+      "}",
+      ""
+    ],
+    "description": "Svelte Action"
+  },
+  "warn": {
+    "prefix": "warn",
+    "description": "warn to console",
+    "body": [
+      "console.warn(\"$1 : \", $1);$2"
+    ]
+  },
+  "warnn": {
+    "prefix": "warnn",
+    "description": "warnn to console",
+    "body": [
+      "console.warn($1);$2"
+    ]
+  },
+  "er": {
+    "prefix": "er",
+    "description": "er to console",
+    "body": [
+      "console.error(\"$1 : \", $1);$2"
+    ]
+  },
+  "err": {
+    "prefix": "err",
+    "description": "err to console",
+    "body": [
+      "console.error($1);$2"
+    ]
+  },
+  "$page": {
+    "prefix": "$page",
+    "description": "$page",
+    "body": [
+      "import { page } from '$app/stores';"
+    ]
+  }
+}

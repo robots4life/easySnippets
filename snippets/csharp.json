@@ -1,0 +1,10 @@
+{
+  "log": {
+    "prefix": "log",
+    "description": "Console.WriteLine()",
+    "body": [
+      "Console.WriteLine($1);",
+      ""
+    ]
+  }
+}
