@@ -4,6 +4,6 @@
 
 Linux
 
-`/home/{username}/.config/Code/User/snippets/`
+`/home/{username}/.config/Code/{username}/snippets/`
 
 :tada: :birthday: :partying_face:
