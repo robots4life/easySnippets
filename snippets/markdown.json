@@ -3,7 +3,7 @@
     "prefix": "a",
     "description": "anchor",
     "body": [
-      "<a href=\"$1\">$2</a>",
+      "<a href=\"$1 \">$2 </a>",
       "",
       "$3"
     ]
@@ -12,7 +12,9 @@
     "prefix": "aa",
     "description": "anchor target blank",
     "body": [
-      "<a target=\"_blank\" href=\"$1\">$1</a>$2",
+      "<a target=\"_blank\" href=\"$1 \">$1 </a>",
+      "",
+      "$2",
       ""
     ]
   },
