@@ -1,35 +1,27 @@
 {
-  // "a": {
-  //   "prefix": "a",
-  //   "description": "anchor",
-  //   "body": [
-  //     "<a href=\"${1}\">${1}</a>$0"
-  //   ]
-  // },
-  // "aa": {
-  //   "prefix": "aa",
-  //   "description": "anchor target blank",
-  //   "body": [
-  //     "<a target=\"_blank\" href=\"$1\">$1</a>",
-  //     ""
-  //   ]
-  // },
-  // "d": {
-  //   "prefix": "details",
-  //   "description": "details",
-  //   "body": [
-  //     "<details>",
-  //     "",
-  //     "$1",
-  //     "",
-  //     "</details>"
-  //   ]
-  // },
+  "anchor target": {
+      "prefix": "aa",
+      "body": [
+          "<a target=\"_blank\" href=\"$CLIPBOARD\">$CLIPBOARD</a>$0"
+      ],
+      "description": "anchor target"
+  },
   "anchor": {
-  "prefix": "a",
-  "body": [
-    "<a href=\"$CLIPBOARD\">$CLIPBOARD</a>$0"
-  ],
-  "description": "anchor"
-}
+      "prefix": "a",
+      "body": [
+          "<a href=\"$CLIPBOARD\">$CLIPBOARD</a>$0"
+      ],
+      "description": "anchor"
+  },
+  "d": {
+      "prefix": "details",
+      "description": "details",
+      "body": [
+          "<details>",
+          "",
+          "$1",
+          "",
+          "</details>"
+      ]
+  }
 }
