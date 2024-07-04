@@ -3,8 +3,9 @@
     "prefix": "a",
     "description": "anchor",
     "body": [
-      "<a href=\"$1\">$1</a>$2",
-      ""
+      "<a href=\"$1\">$1</a>",
+      "",
+      "$2"
     ]
   },
   "aa": {
