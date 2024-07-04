@@ -1,28 +1,35 @@
 {
-  "a": {
-    "prefix": "a",
-    "description": "anchor",
-    "body": [
-      "<a href=\"${1}\">${1}</a>$0"
-    ]
-  },
-  "aa": {
-    "prefix": "aa",
-    "description": "anchor target blank",
-    "body": [
-      "<a target=\"_blank\" href=\"$1\">$1</a>",
-      ""
-    ]
-  },
-  "d": {
-    "prefix": "details",
-    "description": "details",
-    "body": [
-      "<details>",
-      "",
-      "$1",
-      "",
-      "</details>"
-    ]
-  }
+  // "a": {
+  //   "prefix": "a",
+  //   "description": "anchor",
+  //   "body": [
+  //     "<a href=\"${1}\">${1}</a>$0"
+  //   ]
+  // },
+  // "aa": {
+  //   "prefix": "aa",
+  //   "description": "anchor target blank",
+  //   "body": [
+  //     "<a target=\"_blank\" href=\"$1\">$1</a>",
+  //     ""
+  //   ]
+  // },
+  // "d": {
+  //   "prefix": "details",
+  //   "description": "details",
+  //   "body": [
+  //     "<details>",
+  //     "",
+  //     "$1",
+  //     "",
+  //     "</details>"
+  //   ]
+  // },
+  "anchor": {
+  "prefix": "a",
+  "body": [
+    "<a href=\"$1\">$1</a>$0"
+  ],
+  "description": "anchor"
+}
 }
