@@ -1,11 +1,4 @@
 {
-  "anchor": {
-    "prefix": "a",
-    "body": [
-      "<a href=\"$1\">$2</a>$3",
-      ""
-    ]
-  },
   "labelInput": {
     "prefix": "labelInput",
     "description": "label input",
