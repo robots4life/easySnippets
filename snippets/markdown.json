@@ -28,7 +28,7 @@
   "anchor": {
   "prefix": "a",
   "body": [
-    "<a href=\"$1\">$1</a>$0"
+    "<a href=\"$CLIPBOARD\">$CLIPBOARD</a>$0"
   ],
   "description": "anchor"
 }
