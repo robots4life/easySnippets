@@ -38,7 +38,7 @@
     ]
   },
   "@for": {
-    "prefix": "@for",
+    "prefix": "ngfor",
     "body": [
       "@for ($1; track $2) {",
       "$3",
