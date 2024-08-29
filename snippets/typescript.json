@@ -151,14 +151,5 @@
       "import { page } from '\\$app/stores';"
     ],
     "description": "$page"
-  },
-  "sts": {
-    "prefix": "sts",
-    "description": "script ts",
-    "body": [
-      "<script lang=\"ts\">",
-      "    $1",
-      "</script>"
-    ]
   }
 }
