@@ -35,7 +35,7 @@
     "prefix": "pre",
     "description": "pre",
     "body": [
-      "<pre>{JSON.stringify($1, null, 2)}</pre>"
+      "<pre>$1 : {JSON.stringify($1, null, 2)}</pre>"
     ]
   },
   "module": {
