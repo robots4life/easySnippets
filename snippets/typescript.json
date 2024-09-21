@@ -155,13 +155,13 @@
   "db": {
     "prefix": "db",
     "body": [
-      "import { db } from '$lib/server/prisma';"
+      "import { db } from '\\$lib/server/prisma';"
     ]
   },
   "dbe": {
     "prefix": "dbe",
     "body": [
-      "import { db, PrismaError } from '$lib/server/prisma';"
+      "import { db, PrismaError } from '\\$lib/server/prisma';"
     ]
   }
 }
