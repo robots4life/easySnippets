@@ -77,7 +77,8 @@
     "prefix": "$page",
     "description": "$page",
     "body": [
-      "import { page } from '$app/stores';"
+      "import { page as pageState } from '\\$app/state';",
+      ""
     ]
   }
 }

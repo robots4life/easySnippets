@@ -148,7 +148,8 @@
   "$page": {
     "prefix": "$page",
     "body": [
-      "import { page as pageStore } from '\\$app/stores';"
+      "import { page as pageState } from '\\$app/state';",
+      ""
     ],
     "description": "$page"
   },
