@@ -1,0 +1,9 @@
+{
+  "log": {
+    "prefix": "log",
+    "description": "console log",
+    "body": [
+      "Console.WriteLine(\"Hello, World!\");"
+    ]
+  }
+}
